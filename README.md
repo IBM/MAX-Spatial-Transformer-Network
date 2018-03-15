@@ -17,16 +17,16 @@ This repository contains code to train and score a Spatial Transformer Network o
 ### Setup an IBM Cloud Object Storage (COS) account
 - Create an IBM Cloud Object Storage account if you don't have one (https://www.ibm.com/cloud/storage)
 - Create credentials for either reading and writing or just reading
-	- From the bluemix console page (https://console.bluemix.net/dashboard/apps/), choose Cloud Object Storage
-	- On the left side, click the service credentials
+	- From the bluemix console page (https://console.bluemix.net/dashboard/apps/), choose `Cloud Object Storage`
+	- On the left side, click the `service credentials`
 	- Click on the `new credentials` button to create new credentials
-	- In the 'Add New Credentials' popup, use this parameter `{"HMAC":true} in the `Add Inline Configuration...`
+	- In the 'Add New Credentials' popup, use this parameter `{"HMAC":true}` in the `Add Inline Configuration...`
 	- When you create the credentials, copy the `access_key_id` and `secret_access_key` values.
 	- Make a note of the endpoint url
 		- On the left side of the window, click on `Endpoint`
 		- Copy the relevant public or private endpoint. [I choose the us-geo private endpoint].
 - In addition setup your [AWS S3 command line](https://aws.amazon.com/cli/) which can be used to create buckets and/or add files to COS.
-   - Export AWS_ACCESS_KEY_ID with your COS `access_key_id` and AWS_SECRET_ACCESS_KEY with your COS `secret_access_key`
+   - Export `AWS_ACCESS_KEY_ID` with your COS `access_key_id` and `AWS_SECRET_ACCESS_KEY` with your COS `secret_access_key`
 
 ### Setup IBM CLI & ML CLI
 
@@ -40,7 +40,7 @@ This repository contains code to train and score a Spatial Transformer Network o
 
 ## Training the model
 
-The train.sh utility script will deploy the experiment to WML and start the training as a `training-run`
+The `train.sh` utility script will deploy the experiment to WML and start the training as a `training-run`
 
 ```
 train.sh
@@ -72,7 +72,7 @@ Save the model, when the training run has successfully completed and deploy it f
 
 ## Scoring the model
 
-- Update `modelId` and `deploymentId` on scoring-payload.json
+- Update `modelId` and `deploymentId` on `scoring-payload.json`
 - Score the model with `bx ml score scoring-payload.json`
 
 ```
@@ -86,4 +86,4 @@ Score request successful
 
 ## References
 
-[1] Jaderberg, Max, et al. "Spatial Transformer Networks." arXiv preprint arXiv:1506.02025 (2015)
+[1] Jaderberg, Max, et al. "Spatial Transformer Networks." arXiv preprint [arXiv:1506.02025](https://arxiv.org/abs/1506.02025) (2015)
