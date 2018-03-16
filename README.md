@@ -84,6 +84,16 @@ OK
 Score request successful
 ```
 
+
+
+## Licenses
+
+| Component | License | Link  |
+| ------------- | --------  | -------- |
+| This repository | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) | [LICENSE](LICENSE) |
+| Model Code (3rd party) | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) | [TensorFlow Models](https://github.com/tensorflow/models/blob/master/LICENSE)|
+|Data|[MIT](https://github.com/daviddao/spatial-transformer-tensorflow/blob/master/LICENSE)|[Cluttered MNIST ](https://github.com/daviddao/spatial-transformer-tensorflow/blob/master/data/mnist_sequence1_sample_5distortions5x5.npz)|
+
 ## References
 
 [1] Jaderberg, Max, et al. "Spatial Transformer Networks." arXiv preprint arXiv:1506.02025 (2015)
