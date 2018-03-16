@@ -6,7 +6,10 @@ This repository contains code to train and score a Spatial Transformer Network o
 
 <div align="center">
   <img width="600px" src="http://i.imgur.com/ExGDVul.png"><br><br>
+  Image source: [imgur](https://imgur.com/tos)
 </div>
+
+
 
 # Quickstart
 
