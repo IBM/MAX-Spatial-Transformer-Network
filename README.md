@@ -5,11 +5,8 @@ This repository contains code to train and score a Spatial Transformer Network o
 > Spatial Transformer Network allows the spatial manipulation of data within the network.
 
 <div align="center">
-  <img width="600px" src="http://i.imgur.com/ExGDVul.png"><br><br>
-  Image source: [imgur](https://imgur.com/tos)
+  <img width="600px" src="spatial-transformer.png"><br><br>
 </div>
-
-
 
 # Quickstart
 
