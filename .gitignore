@@ -1,0 +1,9 @@
+.DS_Store
+
+# PyCharm
+.idea/
+*.iml
+
+mnist_sequence1_sample_5distortions5x5.npz
+training-runs.yml
+training-runs.yml.bak
