@@ -2,13 +2,13 @@
 
 This repository contains code to train and score a Spatial Transformer Network on the [IBM Watson Machine Learning](https://www.ibm.com/cloud/machine-learning), from the IBM Code Model Asset Exchange.
 
-> Spatial Transformer Network allows the spatial manipulation of data within the network.
+> A Spatial Transformer Network allows the spatial manipulation of data within the network.
 
 <div align="center">
   <img width="600px" src="spatial-transformer.png"><br><br>
 </div>
 
->  It can be inserted into existing convolutional architectures, giving neural networks the ability to actively spatially transform feature maps, conditional on the feature map itself, without any extra training supervision or modification to the optimisation process.
+>  It can be inserted into existing convolutional architectures, giving neural networks the ability to actively spatially transform feature maps, conditional on the feature map itself, without any extra training supervision or modification to the optimisation process[1].
 
 ## How to use
 
