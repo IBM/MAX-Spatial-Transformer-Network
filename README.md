@@ -8,6 +8,38 @@ This repository contains code to train and score a Spatial Transformer Network o
   <img width="600px" src="spatial-transformer.png"><br><br>
 </div>
 
+>  It can be inserted into existing convolutional architectures, giving neural networks the ability to actively spatially transform feature maps, conditional on the feature map itself, without any extra training supervision or modification to the optimisation process.
+
+## How to use
+
+```python
+transformer(U, theta, out_size)
+```
+
+#### Parameters
+
+```
+
+    U : float
+        The output of a convolutional net should have the
+        shape [num_batch, height, width, num_channels].
+    theta: float
+        The output of the
+        localisation network should be [num_batch, 6].
+    out_size: tuple of two ints
+        The size of the output of the network
+```
+
+#### Notes
+To initialize the network to the identity transform init ``theta`` to :
+
+```python
+identity = np.array([[1., 0., 0.],
+                    [0., 1., 0.]])
+identity = identity.flatten()
+theta = tf.Variable(initial_value=identity)
+```
+
 # Quickstart
 
 ## Prerequisites
