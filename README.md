@@ -1,6 +1,6 @@
 # IBM Code Model Asset Exchange: Spatial Transformer
 
-This repository contains code to train and score a Spatial Transformer Network on the [IBM Watson Machine Learning](https://www.ibm.com/cloud/machine-learning), from the IBM Code Model Asset Exchange.
+This repository contains code to train and score a Spatial Transformer Network on [IBM Watson Machine Learning](https://www.ibm.com/cloud/machine-learning). This model is part of the IBM Code Model Asset Exchange.
 
 > A Spatial Transformer Network allows the spatial manipulation of data within the network.
 
