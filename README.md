@@ -1,4 +1,4 @@
-# IBM Code Model Asset Exchange: </br> Spatial Transformer Network
+# IBM Code Model Asset Exchange: Spatial Transformer
 
 This repository contains code to train and score a Spatial Transformer Network on the [IBM Watson Machine Learning](https://www.ibm.com/cloud/machine-learning), from the IBM Code Model Asset Exchange.
 
