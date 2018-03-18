@@ -96,4 +96,4 @@ Score request successful
 
 ## References
 
-[1] Jaderberg, Max, et al. "Spatial Transformer Networks." arXiv preprint arXiv:1506.02025 (2015)
+[1] Jaderberg, Max, et al. ["Spatial Transformer Networks"](https://arxiv.org/pdf/1506.02025) arXiv preprint arXiv:1506.02025 (2015)
