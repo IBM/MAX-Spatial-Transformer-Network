@@ -116,7 +116,9 @@ OK
 Score request successful
 ```
 
+## Train the model in Fabric for Deep Learning
 
+If you want to train this model using Fabric for Deep Learning ([FFDL](https://github.com/IBM/FfDL)), You can simply clone the FfDL repository and follow the instructions over [here](https://github.com/IBM/FfDL/blob/master/etc/converter/ffdl-wml.md) to convert your `training-runs.yml` into FfDL's specification.
 
 ## Licenses
 
