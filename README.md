@@ -49,10 +49,10 @@ theta = tf.Variable(initial_value=identity)
 ### Setup an IBM Cloud Object Storage (COS) account
 - Create an IBM Cloud Object Storage account if you don't have one (https://www.ibm.com/cloud/storage)
 - Create credentials for either reading and writing or just reading
-	- From the bluemix console page (https://console.bluemix.net/dashboard/apps/), choose Cloud Object Storage
+	- From the bluemix console page (https://console.bluemix.net/dashboard/apps/), choose `Cloud Object Storage`
 	- On the left side, click the service credentials
 	- Click on the `new credentials` button to create new credentials
-	- In the 'Add New Credentials' popup, use this parameter `{"HMAC":true} in the `Add Inline Configuration...`
+	- In the `Add New Credentials` popup, use this parameter `{"HMAC":true}` in the `Add Inline Configuration...`
 	- When you create the credentials, copy the `access_key_id` and `secret_access_key` values.
 	- Make a note of the endpoint url
 		- On the left side of the window, click on `Endpoint`
@@ -72,7 +72,7 @@ theta = tf.Variable(initial_value=identity)
 
 ## Training the model
 
-The train.sh utility script will deploy the experiment to WML and start the training as a `training-run`
+The `train.sh` utility script will deploy the experiment to WML and start the training as a `training-run`
 
 ```
 train.sh
@@ -91,7 +91,7 @@ Model-ID is 'training-GCtN_YRig'
 - To list the training runs - `bx ml list training-runs`
 - To monitor a specific training run - `bx ml show training-runs <training-id>`
 - To monitor the output (stdout) from the training run - `bx ml monitor training-runs <training-id>`
-	- This will print the first couple of lines, and may time out.
+- This will print the first couple of lines, and may time out.
 
 
 ### Save and deploy the model after completion
