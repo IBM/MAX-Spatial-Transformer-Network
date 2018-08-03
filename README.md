@@ -62,7 +62,7 @@ theta = tf.Variable(initial_value=identity)
 
 ### Setup IBM CLI & ML CLI
 
-- Install [IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html#getting-started)
+- Install [IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use)
   - Login using `bx login` or `bx login --sso` if within IBM
 - Install [ML CLI Plugin](https://dataplatform.ibm.com/docs/content/analyze-data/ml_dlaas_environment.html)
   - After install, check if there is any plugins that need update
