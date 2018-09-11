@@ -10,6 +10,25 @@ This repository contains code to train and score a Spatial Transformer Network o
 
 >  It can be inserted into existing convolutional architectures, giving neural networks the ability to actively spatially transform feature maps, conditional on the feature map itself, without any extra training supervision or modification to the optimisation process[1].
 
+
+## Model Metadata
+| Domain | Application | Industry  | Framework | Training Data | Input Data Format |
+| ------------- | --------  | -------- | --------- | --------- | -------------- |
+| Image | Computer Vision | General | TensorFlow | [Cluttered MNIST Sample](https://github.com/daviddao/spatial-transformer-tensorflow/blob/master/data/mnist_sequence1_sample_5distortions5x5.npz) | Images |
+
+## References
+
+[1] Jaderberg, Max, et al. ["Spatial Transformer Networks"](https://arxiv.org/pdf/1506.02025) arXiv preprint arXiv:1506.02025 (2015)
+
+## Licenses
+
+| Component | License | Link  |
+| ------------- | --------  | -------- |
+| This repository | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) | [LICENSE](LICENSE) |
+| Model Code (3rd party) | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) | [TensorFlow Models](https://github.com/tensorflow/models/blob/master/LICENSE)|
+|Data|[MIT](https://github.com/daviddao/spatial-transformer-tensorflow/blob/master/LICENSE)|[Cluttered MNIST ](https://github.com/daviddao/spatial-transformer-tensorflow/blob/master/data/mnist_sequence1_sample_5distortions5x5.npz)|
+
+
 ## How to use
 
 ```python
@@ -119,15 +138,3 @@ Score request successful
 ## Train the model in Fabric for Deep Learning
 
 If you want to train this model using Fabric for Deep Learning ([FFDL](https://github.com/IBM/FfDL)), You can simply clone the FfDL repository and follow the instructions over [here](https://github.com/IBM/FfDL/blob/master/etc/converter/ffdl-wml.md) to convert your `training-runs.yml` into FfDL's specification.
-
-## Licenses
-
-| Component | License | Link  |
-| ------------- | --------  | -------- |
-| This repository | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) | [LICENSE](LICENSE) |
-| Model Code (3rd party) | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) | [TensorFlow Models](https://github.com/tensorflow/models/blob/master/LICENSE)|
-|Data|[MIT](https://github.com/daviddao/spatial-transformer-tensorflow/blob/master/LICENSE)|[Cluttered MNIST ](https://github.com/daviddao/spatial-transformer-tensorflow/blob/master/data/mnist_sequence1_sample_5distortions5x5.npz)|
-
-## References
-
-[1] Jaderberg, Max, et al. ["Spatial Transformer Networks"](https://arxiv.org/pdf/1506.02025) arXiv preprint arXiv:1506.02025 (2015)
