@@ -14,7 +14,7 @@ This repository contains code to train and score a Spatial Transformer Network o
 ## Model Metadata
 | Domain | Application | Industry  | Framework | Training Data | Input Data Format |
 | ------------- | --------  | -------- | --------- | --------- | -------------- |
-| Image | Computer Vision | General | TensorFlow | [Cluttered MNIST Sample](https://github.com/daviddao/spatial-transformer-tensorflow/blob/master/data/mnist_sequence1_sample_5distortions5x5.npz) | Images |
+| Vision | Computer Vision | General | TensorFlow | [Cluttered MNIST Sample](https://github.com/daviddao/spatial-transformer-tensorflow/blob/master/data/mnist_sequence1_sample_5distortions5x5.npz) | Images |
 
 ## References
 
@@ -63,7 +63,7 @@ theta = tf.Variable(initial_value=identity)
 
 ## Prerequisites
 
-* This experiment requires a provisioned instance of IBM Watson Machine Learning service.
+* This experiment requires a provisioned instance of IBM Watson Machine Learning service. If you don't have an instance yet, go to [Watson Machine Learning in the IBM Cloud Catalog](https://console.bluemix.net/catalog/services/machine-learning) to create one.
 
 ### Setup an IBM Cloud Object Storage (COS) account
 - Create an IBM Cloud Object Storage account if you don't have one (https://www.ibm.com/cloud/storage)
