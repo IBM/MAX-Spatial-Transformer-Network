@@ -60,7 +60,7 @@ if [ ! -f ./training-runs.yml ]; then
     read RESULTS_BUCKET
     RESULTS_BUCKET=$(echo $RESULTS_BUCKET|tr -d '\n')
     CREATE_SUCCESS=$(make_bucket $RESULTS_BUCKET)
-  donegit s
+  done
 
   echo 'Generating training-runs.yml'
   cp ./training-runs.yml.template ./training-runs.yml
@@ -68,7 +68,6 @@ if [ ! -f ./training-runs.yml ]; then
   sed -i .bak "s/    secret_access_key:.*/    secret_access_key: $AWS_SECRET_ACCESS_KEY/g" training-runs.yml
   sed -i .bak "s#TRAINING_BUCKET#$TRAINING_BUCKET#" training-runs.yml
   sed -i .bak "s#RESULTS_BUCKET#$RESULTS_BUCKET#" training-runs.yml
-
 fi
 
 ibmcloud ml train $MODEL_ZIP_FILE training-runs.yml
