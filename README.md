@@ -68,7 +68,7 @@ theta = tf.Variable(initial_value=identity)
 ### Setup an IBM Cloud Object Storage (COS) account
 - Create an IBM Cloud Object Storage account if you don't have one (https://www.ibm.com/cloud/storage)
 - Create credentials for either reading and writing or just reading
-	- From the bluemix console page (https://console.bluemix.net/dashboard/apps/), choose `Cloud Object Storage`
+	- From the bluemix console page (https://console.bluemix.net/dashboard/apps/) choose `Cloud Object Storage`
 	- On the left side, click the `service credentials`
 	- Click on the `new credentials` button to create new credentials
 	- In the `Add New Credentials` popup, use this parameter `{"HMAC":true}` in the `Add Inline Configuration...`
@@ -77,7 +77,7 @@ theta = tf.Variable(initial_value=identity)
 		- On the left side of the window, click on `Endpoint`
 		- Copy the relevant public or private endpoint. [I choose the us-geo private endpoint].
 - In addition setup your [AWS S3 command line](https://aws.amazon.com/cli/) which can be used to create buckets and/or add files to COS.
-   - Export `AWS_ACCESS_KEY_ID` with your COS `access_key_id` and `AWS_SECRET_ACCESS_KEY` with your COS `secret_access_key`
+    - Export `AWS_ACCESS_KEY_ID` with your COS `access_key_id` and `AWS_SECRET_ACCESS_KEY` with your COS `secret_access_key`
 
 ### Setup IBM CLI & ML CLI
 
