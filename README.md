@@ -82,10 +82,10 @@ theta = tf.Variable(initial_value=identity)
 ### Setup IBM CLI & ML CLI
 
 - Install [IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use)
-  - Login using `bx login` or `bx login --sso` if within IBM
+  - Login using `ibmcloud login` or `ibmcloud login --sso` if within IBM
 - Install [ML CLI Plugin](https://dataplatform.ibm.com/docs/content/analyze-data/ml_dlaas_environment.html)
   - After install, check if there is any plugins that need update
-    - `bx plugin update`
+    - `ibmcloud plugin update`
   - Make sure to setup the various environment variables correctly:
     - `ML_INSTANCE`, `ML_USERNAME`, `ML_PASSWORD`, `ML_ENV`
 
@@ -107,24 +107,24 @@ Model-ID is 'training-GCtN_YRig'
 
 ### Monitor the  training run
 
-- To list the training runs - `bx ml list training-runs`
-- To monitor a specific training run - `bx ml show training-runs <training-id>`
-- To monitor the output (stdout) from the training run - `bx ml monitor training-runs <training-id>`
+- To list the training runs - `ibmcloud ml list training-runs`
+- To monitor a specific training run - `ibmcloud ml show training-runs <training-id>`
+- To monitor the output (stdout) from the training run - `ibmcloud ml monitor training-runs <training-id>`
 	- This will print the first couple of lines, and may time out.
 
 
 ### Save and deploy the model after completion
 
 Save the model, when the training run has successfully completed and deploy it for scoring.
-- `bx ml store training-runs <training-id>`
+- `ibmcloud ml store training-runs <training-id>`
 	- This should give you back a *model-id*
-- `bx ml deploy <model-id> 'spatial-training-deployment'`
+- `ibmcloud ml deploy <model-id> 'spatial-training-deployment'`
 	- This should give you a *deployment-id*
 
 ## Scoring the model
 
 - Update `modelId` and `deploymentId` on `scoring-payload.json`
-- Score the model with `bx ml score scoring-payload.json`
+- Score the model with `ibmcloud ml score scoring-payload.json`
 
 ```
 bx ml score scoring-payload.json
