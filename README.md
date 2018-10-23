@@ -94,7 +94,7 @@ theta = tf.Variable(initial_value=identity)
 The `train.sh` utility script will deploy the experiment to WML and start the training as a `training-run`
 
 ```
-train.sh
+$ train.sh
 ```
 
 After the train is started, it should print the training-id that is going to be necessary for steps below
@@ -127,7 +127,7 @@ Save the model, when the training run has successfully completed and deploy it f
 - Score the model with `ibmcloud ml score scoring-payload.json`
 
 ```
-bx ml score scoring-payload.json
+$ ibmcloud ml score scoring-payload.json
 Fetching scoring results for the deployment '14f98de1-bc60-4ece-b9f2-3e0c1528c778' ...
 {"values": [1]}
 
